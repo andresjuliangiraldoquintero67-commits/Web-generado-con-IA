@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | Desarrollador Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+                ☰
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact" class="btn-nav">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <p class="hero-subtitle">Hola, mi nombre es</p>
+                <h1 class="hero-title">Desarrollador Software</h1>
+                <p class="hero-description">
+                    Especializado en crear soluciones web eficientes, accesibles y con código limpio utilizando tecnologías modernas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Soy un apasionado por la programación y la arquitectura de software. Me enfoco en escribir código semántico, escalable y en diseñar experiencias de usuario fluidas.
+                        </p>
+                        <p>
+                            Mi objetivo es transformar problemas complejos en aplicaciones web sencillas e intuitivas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Tarjeta 1 -->
+                    <article class="project-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Sistema de Gestión web</h3>
+                            <p class="card-text">Plataforma para administración de inventarios y reportes en tiempo real.</p>
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a href="#" class="card-link">Ver Repositorio &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="project-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Aplicación de Tareas</h3>
+                            <p class="card-text">Herramienta interactiva de productividad con almacenamiento local.</p>
+                            <ul class="tags">
+                                <li>JavaScript</li>
+                                <li>LocalStorage</li>
+                                <li>CSS Grid</li>
+                            </ul>
+                            <a href="#" class="card-link">Ver Repositorio &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="project-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Landing Page Comercial</h3>
+                            <p class="card-text">Página de alta conversión enfocada en la velocidad y el rendimiento mobile-first.</p>
+                            <ul class="tags">
+                                <li>HTML Semántico</li>
+                                <li>CSS Variables</li>
+                            </ul>
+                            <a href="#" class="card-link">Ver Repositorio &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5 Semántico</div>
+                    <div class="skill-item">CSS3 & Flexbox/Grid</div>
+                    <div class="skill-item">JavaScript ES6+</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Git & GitHub</div>
+                    <div class="skill-item">Diseño Responsive</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        <span class="error-message" id="error-name"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        <span class="error-message" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <span class="error-message" id="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                    <div id="form-feedback" class="form-feedback" role="alert"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DevPortfolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
